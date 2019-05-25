@@ -16,6 +16,8 @@
         <link href="../css/addons/datatables.min.css" rel="stylesheet">
         <!-- Custom CSS -->
         <link href="../css/style.css" rel="stylesheet">
+
+
     </head>
 
     <body>
@@ -117,16 +119,16 @@
                         <i class="fas fa-user"></i> Login </a>
 
                     <div class="dropdown-menu dropdown-menu-right">
-                        <form class="px-4 py-3">
+                        <form class="px-4 py-3" action="../includes/login.inc.php" method="post">
                             <div class="form-group">
                                 <label for="exampleDropdownFormEmail1">E-Mail-Adresse</label>
                                 <input type="email" class="form-control" id="exampleDropdownFormEmail1"
-                                       placeholder="email@example.com">
+                                       placeholder="email@example.com" name="mail">
                             </div>
                             <div class="form-group">
                                 <label for="exampleDropdownFormPassword1">Passwort</label>
                                 <input type="password" class="form-control" id="exampleDropdownFormPassword1"
-                                       placeholder="Passwort">
+                                       placeholder="Passwort" name="pwd">
                             </div>
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="dropdownCheck">
@@ -134,10 +136,10 @@
                                     Angemeldet bleiben
                                 </label>
                             </div>
-                            <button type="submit" class="btn btn-primary">Anmelden</button>
+                            <button type="submit" class="btn btn-primary" name="login-submit">Anmelden</button>
                         </form>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Registrieren</a>
+                        <a class="dropdown-item" href="signup.php" id="register">Registrieren</a>
                         <a class="dropdown-item" href="#">Passwort vergessen?</a>
                     </div>
                 </li>
@@ -145,6 +147,9 @@
 
         </div>
     </nav>
+
+
+
 
 
     <!-- JQuery -->
@@ -157,6 +162,7 @@
     <script src="../js/mdb.min.js"></script>
     <!-- MDBootstrap Datatables  -->
     <script type="text/javascript" src="../js/addons/datatables.min.js"></script>
+
     </body>
     </html>
 

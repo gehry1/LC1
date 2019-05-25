@@ -68,6 +68,18 @@ head($current);
                 <div class="row wow fadeIn">
                     <!--Grid column-->
 
+                    <?php
+
+                    if (isset($_SESSION['userUid'])){
+
+                        echo '<p>You are logged in!</p>';
+
+                    }else{
+                        echo'<p>You are logged out!</p>';
+                    }
+
+                    ?>
+
                         <?php
                         try {
                             $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
@@ -113,6 +125,8 @@ head($current);
                             echo $e->getMessage();
                         }
                         ?>
+
+
                     </div>
             </section>
 

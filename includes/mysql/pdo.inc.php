@@ -3,11 +3,16 @@
 $hostname = 'localhost';
 
 /* mysql username */
-$username = 'root'; //
+$username = 'a_pedi'; //
 
 /* mysql password */
-$password = ''; // 
+$password = '1234'; //
 
 /* mysql database */
 $dbname = 'pedipla'; //
+
+
+
+
+
 ?>
