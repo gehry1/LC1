@@ -190,14 +190,15 @@ head($current);
             <div class="row">
                 <div class="form-group green-border-focus">
                     <label for="reason_q1">Was ist das Hauptziel der App?</label>
-                    <textarea class="form-control" name="reasonq1" id="reason_q1"  rows="5" cols="150"></textarea>
+                    <textarea class="form-control" name="reason_q1" id="reason_q1"  rows="5" cols="150"></textarea>
                 </div>
             </div>
+
 
             <div class="row">
                 <div class="form-group green-border-focus">
                     <label for="reason_q2">Wie wird sichergestellt, dass das Hauptziel der App erreicht wird?</label>
-                    <textarea class="form-control" name="reasonq2" id="reason_q2"  rows="5" cols="150"></textarea>
+                    <textarea class="form-control" name="reason_q2" id="reason_q2"  rows="5" cols="150"></textarea>
                 </div>
             </div>
 
@@ -288,7 +289,7 @@ head($current);
             <div class="row">
                 <div class="form-group green-border-focus">
                     <label for="ressource_q1">Wie viel Speicherplatz benötigt die App und wie viel kostet sie?</label>
-                    <textarea class="form-control" id="ressource_q1" rows="5" cols="150"></textarea>
+                    <textarea class="form-control" id="ressource_q1" name="ressource_q1" rows="5" cols="150"></textarea>
                 </div>
             </div>
 
@@ -315,10 +316,7 @@ head($current);
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4"><label>test </label></div>
-                <div class="col-md-8"><input class="form-control" type="text" name="test" placeholder="test"></div>
-            </div>
+
 
 
             <br>
