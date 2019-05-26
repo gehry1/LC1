@@ -3,8 +3,9 @@ body {
   min-height: 100vh;
 }
 
-
-
+.container {
+  max-width: 80%;
+}
 
 .content-wrap{
   padding-bottom: 140px;
