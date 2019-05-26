@@ -17,7 +17,7 @@ head($current);
 
 <div class="content-wrap">
 
-    <form action="../includes/register.inc.php" method="post">
+    <form action="../includes/register.inc.php" id="registerForm" method="post" enctype="multipart/form-data">
         <div class="container">
             <h1>Erfassen einer App</h1>
             <div class="md-form form-group mt-5">
@@ -41,27 +41,27 @@ head($current);
             <div class="row">
                 <div class="col-md-2">
                     <div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="health" name="health">
+                    <input type="checkbox" class="custom-control-input" id="health" name="health" value="1" >
                     <label class="custom-control-label" for="health">Gesundheitsprävention</label>
                 </div>
                 <div class="col-md-2">
                     <div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="prim" name="prim">
+                    <input type="checkbox" class="custom-control-input" id="prim" name="prim" value="2">
                     <label class="custom-control-label" for="prim">Primärprävention</label>
                 </div>
                 <div class="col-md-2">
                     <div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="sek" name="sek">
+                    <input type="checkbox" class="custom-control-input" id="sek" name="sek" value="3">
                     <label class="custom-control-label" for="sek">Sekundärprävention</label>
                 </div>
                 <div class="col-md-2">
                     <div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="patients" name="patients">
+                    <input type="checkbox" class="custom-control-input" id="patients" name="patients" value="4">
                     <label class="custom-control-label" for="patients">Laien / Patienten</label>
                 </div>
                 <div class="col-md-2">
                     <div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="prof" name="prof">
+                    <input type="checkbox" class="custom-control-input" id="prof" name="prof" value="5">
                     <label class="custom-control-label" for="prof">Heilberufsgruppen</label>
                 </div>
             </div>
@@ -74,31 +74,31 @@ head($current);
 
                 <div class="col-md-2">
                     <div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="asthma" name="asthma">
+                    <input type="checkbox" class="custom-control-input" id="asthma" name="asthma" disabled="false" value="1">
                     <label class="custom-control-label" for="asthma">Asthma</label>
                 </div>
 
                 <div class="col-md-2"><div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="behandlung" name="behandlung">
+                    <input type="checkbox" class="custom-control-input" id="behandlung" name="behandlung" disabled="false" value="2">
                     <label class="custom-control-label" for="behandlung">Behandlung</label></div>
 
                 <div class="col-md-2"><div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="bildung" name="bildung">
+                    <input type="checkbox" class="custom-control-input" id="bildung" name="bildung" disabled="false" value="3">
                     <label class="custom-control-label" for="bildung">Bildung</label>
                 </div>
 
                 <div class="col-md-2">
                     <div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="blutdruck" name="blutdruck">
+                    <input type="checkbox" class="custom-control-input" id="blutdruck" name="blutdruck" disabled="false" value="4">
                     <label class="custom-control-label" for="blutdruck">Blutdruck</label>
                 </div>
 
                 <div class="col-md-2"><div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="depresion" name="depression">
+                    <input type="checkbox" class="custom-control-input" id="depresion" name="depression" disabled="false" value="5">
                     <label class="custom-control-label" for="depresion">Depression / Stress</label></div>
 
                 <div class="col-md-2"><div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="diabetes" name="diabetes">
+                    <input type="checkbox" class="custom-control-input" id="diabetes" name="diabetes" disabled="false" value="6">
                     <label class="custom-control-label" for="diabetes">Diabetes</label></div>
 
 
@@ -108,31 +108,31 @@ head($current);
 
                 <div class="col-md-2">
                     <div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="entspannung" name="entspannung">
+                    <input type="checkbox" class="custom-control-input" id="entspannung" name="entspannung" disabled="false" value="7">
                     <label class="custom-control-label" for="entspannung">Entspannung</label>
                 </div>
 
                 <div class="col-md-2"><div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="ernaehrung" name="ernaehrung">
+                    <input type="checkbox" class="custom-control-input" id="ernaehrung" name="ernaehrung" disabled="false" value="8">
                     <label class="custom-control-label" for="ernaehrung">Ernährung</label></div>
 
                 <div class="col-md-2"><div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="fitness" name="fitness">
+                    <input type="checkbox" class="custom-control-input" id="fitness" name="fitness" disabled="false" value="9">
                     <label class="custom-control-label" for="fitness">Fitness</label>
                 </div>
 
                 <div class="col-md-2">
                     <div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="hautkrankheiten" name="hautkrankheiten">
+                    <input type="checkbox" class="custom-control-input" id="hautkrankheiten" name="hautkrankheiten" disabled="false" value="10">
                     <label class="custom-control-label" for="hautkrankheiten">Hautkrankheiten</label>
                 </div>
 
                 <div class="col-md-2"><div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="kinderkrankheiten" name="kinderkrankheiten">
+                    <input type="checkbox" class="custom-control-input" id="kinderkrankheiten" name="kinderkrankheiten" disabled="false" value="11">
                     <label class="custom-control-label" for="kinderkrankheiten">Kinderkrankheiten</label></div>
 
                 <div class="col-md-2"><div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="krebs" name="krebs">
+                    <input type="checkbox" class="custom-control-input" id="krebs" name="krebs" disabled="false" value="12">
                     <label class="custom-control-label" for="krebs">Krebs</label></div>
 
 
@@ -142,31 +142,31 @@ head($current);
 
                 <div class="col-md-2">
                     <div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="kreislaufkrankheiten" name="kreislaufkrankheiten">
+                    <input type="checkbox" class="custom-control-input" id="kreislaufkrankheiten" name="kreislaufkrankheiten" disabled="false" value="13">
                     <label class="custom-control-label" for="kreislaufkrankheiten">Kreislaufkrankheiten</label>
                 </div>
 
                 <div class="col-md-2"><div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="leitlinien" name="leitlinien">
+                    <input type="checkbox" class="custom-control-input" id="leitlinien" name="leitlinien" disabled="false" value="14">
                     <label class="custom-control-label" for="leitlinien">Leitlinien</label></div>
 
                 <div class="col-md-2"><div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="notfall" name="notfall">
+                    <input type="checkbox" class="custom-control-input" id="notfall" name="notfall" disabled="false" value="15">
                     <label class="custom-control-label" for="notfall">Notfall</label>
                 </div>
 
                 <div class="col-md-2">
                     <div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="schlaf" name="schlaf">
+                    <input type="checkbox" class="custom-control-input" id="schlaf" name="schlaf" disabled="false" value="16">
                     <label class="custom-control-label" for="schlaf">Schlafstörung</label>
                 </div>
 
                 <div class="col-md-2"><div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="schwangerschaft" name="schwangerschaft">
+                    <input type="checkbox" class="custom-control-input" id="schwangerschaft" name="schwangerschaft" disabled="false" value="17">
                     <label class="custom-control-label" for="schwangerschaft">Schwangerschaft</label></div>
 
                 <div class="col-md-2"><div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="vorsorge" name="vorsorge">
+                    <input type="checkbox" class="custom-control-input" id="vorsorge" name="vorsorge" disabled="false" value="18">
                     <label class="custom-control-label" for="vorsorge">Vorsorge</label></div>
 
 
@@ -176,7 +176,7 @@ head($current);
 
                 <div class="col-md-2">
                     <div class="custom-control custom-checkbox"></div>
-                    <input type="checkbox" class="custom-control-input" id="diverses" name="diverses">
+                    <input type="checkbox" class="custom-control-input" id="diverses" name="diverses" disabled="false" value="19">
                     <label class="custom-control-label" for="diverses">Diverses</label>
                 </div>
 
@@ -299,7 +299,7 @@ head($current);
                         <span class="input-group-text" id="inputAppPicture">Upload App Icon</span>
                     </div>
                     <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputAppPictureField" name="appIcon" aria-describedby="inputAppPicture">
+                        <input type="file" class="custom-file-input" id="inputAppPictureField" name="file" aria-describedby="inputAppPicture">
                         <label class="custom-file-label" for="inputGroupFile01">Datei auswählen</label>
                     </div>
                 </div>
@@ -347,4 +347,6 @@ head($current);
 <?php
 include('constants/footer.php');
 ?>
+
+<script src="../js/categoryCheckbox.js"></script>
 </body>
