@@ -19,7 +19,7 @@ include('constants/header.php');
     <div class="container">
         <main>
             <div class="container wow fadeIn">
-                <h2 class="my-5 h2 text-left">Erfassen einer App</h2>
+                <h1 class="h1-responsive h1title">Erfassen einer App</h1>
 
                 <form action="../includes/register.inc.php" id="registerForm" method="post"
                       enctype="multipart/form-data">

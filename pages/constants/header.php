@@ -49,50 +49,50 @@
                     <div class="row customDropdown">
                         <?php
                         try {
-                            $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
+                            $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'"));
 
-                            $sql1 = "select name from category where maincat_id = 1";
+                            $sql1 = "select name, id from category where maincat_id = 1";
                             $result1 = $dbh->query($sql1);
 
                             echo "<div class='col'><a>Gesundheitsförderung</a><div class=\"dropdown-divider\"></div><ul style=\"list-style: none; padding-left: 0px;\" >";
                             while ($line = $result1->fetch()) {
-                                echo "<li><a>" . $line['name'] . "</a></li>";
+                                echo "<li class='hoverItem' onclick=\"location.href='viewCategory.php?id=" . $line['id'] . "';\"><a class='dropdownItem'>" . $line['name'] . "</a></li>";
                             }
                             echo "</ul></div>";
 
-                            $sql2 = "select name from category where maincat_id = 2";
+                            $sql2 = "select name, id from category where maincat_id = 2";
                             $result1 = $dbh->query($sql2);
 
                             echo "<div class='col'><a>Früherkennung/Aufklärung</a><div class=\"dropdown-divider\"></div><ul style=\"list-style: none; padding-left: 0px;\" >";
                             while ($line = $result1->fetch()) {
-                                echo "<li><a>" . $line['name'] . "</a></li>";
+                                echo "<li class='hoverItem' onclick=\"location.href='viewCategory.php?id=" . $line['id'] . "';\"><a>" . $line['name'] . "</a></li>";
                             }
                             echo "</ul></div>";
 
-                            $sql3 = "select name from category where maincat_id = 3";
+                            $sql3 = "select name, id from category where maincat_id = 3";
                             $result1 = $dbh->query($sql3);
 
                             echo "<div class='col'><a>Sekundäprävention</a><div class=\"dropdown-divider\"></div><ul style=\"list-style: none; padding-left: 0px;\" >";
                             while ($line = $result1->fetch()) {
-                                echo "<li><a>" . $line['name'] . "</a></li>";
+                                echo "<li class='hoverItem' onclick=\"location.href='viewCategory.php?id=" . $line['id'] . "';\"><a>" . $line['name'] . "</a></li>";
                             }
                             echo "</ul></div>";
 
-                            $sql4 = "select name from category where maincat_id = 4";
+                            $sql4 = "select name, id from category where maincat_id = 4";
                             $result1 = $dbh->query($sql4);
 
                             echo "<div class='col'><a>Tertiärprävention</a><div class=\"dropdown-divider\"></div><ul style=\"list-style: none; padding-left: 0px;\" >";
                             while ($line = $result1->fetch()) {
-                                echo "<li><a>" . $line['name'] . "</a></li>";
+                                echo "<li class='hoverItem' onclick=\"location.href='viewCategory.php?id=" . $line['id'] . "';\"><a>" . $line['name'] . "</a></li>";
                             }
                             echo "</ul></div>";
 
-                            $sql5 = "select name from category where maincat_id = 5";
+                            $sql5 = "select name, id from category where maincat_id = 5";
                             $result1 = $dbh->query($sql5);
 
                             echo "<div class='col'><a>Gesundheitsfachpersonal</a><div class=\"dropdown-divider\"></div><ul style=\"list-style: none; padding-left: 0px;\" >";
                             while ($line = $result1->fetch()) {
-                                echo "<li><a>" . $line['name'] . "</a></li>";
+                                echo "<li class='hoverItem' onclick=\"location.href='viewCategory.php?id=" . $line['id'] . "';\"><a>" . $line['name'] . "</a></li>";
                             }
                             echo "</ul></div>";
 

@@ -18,7 +18,7 @@ include('constants/header.php');
     <div class="container">
         <main>
             <div class="container wow fadeIn">
-                <h2 class="my-5 h2 text-left">Wir empfehlen</h2>
+                <h1 class="h1-responsive h1title">Wir empfehlen</h1>
 
 
 
@@ -47,7 +47,7 @@ include('constants/header.php');
 
                                 echo "<div class=\"view overlay\"><img src='../img/icons/" . $line['image'] . "' class=\"card-img-top testbla\"style=\"padding-left: 37.5px; padding-right: 37.5px; padding-top: 37.5px; padding-bottom: 17.5px;\"><a><div class=\"mask rgba-white-slight\"></div></a></div>";
 
-                                echo "<div class=\"card-body text-center\"><h5 class='nameSquish'><strong><a class=\"dark-grey-text\">" . $line['name'] . "</a></strong></h5><div class='cqtbn'></div>";
+                                echo "<div class=\"card-body text-center\"><h5 class='nameSquish h5titleCard'><strong><a class=\"dark-grey-text\">" . $line['name'] . "</a></strong></h5>";
 
                                 echo "<a href=\"\" class=\"grey-text\"><h5>Firma bla</h5></a>"; //update the developer column . $line[''] .
 

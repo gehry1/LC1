@@ -1,34 +1,48 @@
 body {
-  position: relative;
-  min-height: 100vh;
+    position: relative;
+    min-height: 100vh;
 }
 
 .container {
-  max-width: 80%;
+    max-width: 80%;
 }
 
-.content-wrap{
-  padding-bottom: 140px;
-  padding-top: 66px;
+.content-wrap {
+    padding-bottom: 140px;
+    padding-top: 66px;
 }
 
-.page-footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 140px;
+.h1title {
+    padding-top: 48px;
+    padding-bottom: 40px;
+}
+
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
 }
 
 .testbla {
   padding: 37px 37px 37px 37px;
 }
 
+.dropdownItem {
+    padding: 5px;
+}
+
+.hoverItem:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
 .card-body {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  position: relative;
-  max-height: 104px;
-  word-break: break-all
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    max-height: 104px;
+    word-break: break-all
 }
 
 .cqtbn {
